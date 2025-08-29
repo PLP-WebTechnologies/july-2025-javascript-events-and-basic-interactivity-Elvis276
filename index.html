@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Page</h1>
+        <button id="themeToggle">🌙 Dark Mode</button>
+    </header>
+
+    <main>
+        <!-- Interactive Counter -->
+        <section class="counter-section">
+            <h2>Counter Game</h2>
+            <p>Count: <span id="count">0</span></p>
+            <button id="increment">+</button>
+            <button id="decrement">-</button>
+            <button id="reset">Reset</button>
+        </section>
+
+        <!-- Collapsible FAQ -->
+        <section class="faq-section">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <button class="faq-question">What is JavaScript? ▼</button>
+                <div class="faq-answer">JavaScript is a programming language for web interactivity.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How do events work? ▼</button>
+                <div class="faq-answer">Events are triggered by user actions like clicks or key presses.</div>
+            </div>
+        </section>
+
+        <!-- Form Validation -->
+        <section class="form-section">
+            <h2>Contact Form</h2>
+            <form id="contactForm">
+                <div>
+                    <input type="text" id="name" placeholder="Full Name" required>
+                    <span class="error" id="nameError"></span>
+                </div>
+                <div>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <span class="error" id="emailError"></span>
+                </div>
+                <div>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <span class="error" id="passwordError"></span>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="successMessage" class="success"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
